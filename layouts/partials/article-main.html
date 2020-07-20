@@ -17,7 +17,7 @@ EPUB
 </a></div>{{ end }}
 {{ if .Params.customGalleys }}{{ range .Params.customGalleys }}{{ if .galleyURL }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .galleyURL }}">
 {{ .galleyname }}
-</a></div>{{ end }}{{ end }}{{ end }}
+</a></div>&nbsp;{{ end }}{{ end }}{{ end }}
 </div>
 {{ if eq .Site.Params.crossmark_enabled true }}
 <div class="article-details-block">
@@ -50,7 +50,7 @@ Keywords
 <div class="article-details-main" id="articleMain">
 <div class="article-details-block article-details-abstract">
 <h2 class="article-details-heading">Abstract</h2>
-<p>{{ .Page.Params.abstract }}</p>
+<p>{{ markdownify .Page.Params.abstract }}</p>
 </div>
 <div class="article-details-block article-details-doi small-screen">
 <a href="https://doi.org/{{ .Page.Params.DOI }}">https://doi.org/{{ .Page.Params.DOI }}</a>
@@ -87,7 +87,7 @@ References
 {{ end }}
 
 {{ if .Page.Params.license }}<div class="article-details-block article-details-license">
-{{ if in .Page.Params.license "creativecommons.org/licenses/by/4.0" }}<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="{{ .Site.BaseURL }}img/cc-by88x31.png" /></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>{{ else if in .Page.Params.license "creativecommons.org/licenses/by-nc/4.0" }}<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="{{ .Site.BaseURL }}img/cc-bync-88x31.png" /></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>{{ end }}
+{{ if in .Page.Params.license "creativecommons.org/licenses/by/4.0" }}<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="{{ .Site.BaseURL }}/img/cc-by88x31.png" /></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>{{ else if in .Page.Params.license "creativecommons.org/licenses/by-nc/4.0" }}<a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="{{ .Site.BaseURL }}/img/cc-bync-88x31.png" /></a><p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>{{ end }}
 </div>{{ end }}
 
 {{ if (and (.Params.canonicalurl) (.Site.Params.mirrorfor)) }}

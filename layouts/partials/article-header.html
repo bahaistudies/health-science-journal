@@ -6,7 +6,7 @@
 		<div class="article-details-issue-section large-screen">{{ .Page.Params.articleType }}</div>
 		<div class="article-details-doi large-screen"><a href="https://doi.org/{{ .Page.Params.DOI }}">https://doi.org/{{ .Page.Params.DOI }}</a></div>										<div class="article-details-published">Published {{ dateFormat "January 2, 2006" .Params.date }}</div>
 		<ul class="authors-string">{{ range $elem_index, $elem_val := $.Params.authors }}
-		<li><a class="author-string-href" href="#author-{{ add (int $elem_index) 1 }}"><span>{{ .given_name }} {{ .surname }}</span><sup class="author-symbol author-plus">&plus;</sup><sup class="author-symbol author-minus hide">&minus;</sup></a>{{ with .ORCID }}<a class="orcidImage" href="https://orcid.org/{{ . }}"><img src="{{ $.Site.BaseURL }}img/orcid.png"></a>{{ end }}</li>{{ end }}
+		<li><a class="author-string-href" href="#author-{{ add (int $elem_index) 1 }}"><span>{{ .given_name }} {{ .surname }}</span><sup class="author-symbol author-plus">&plus;</sup><sup class="author-symbol author-minus hide">&minus;</sup></a>{{ with .ORCID }}<a class="orcidImage" href="https://orcid.org/{{ . }}"><img src="{{ $.Site.BaseURL }}/img/orcid.png"></a>{{ end }}</li>{{ end }}
 		</ul>
 		<div class="article-details-authors">{{ range $elem_index, $elem_val := $.Params.authors }}
 			<div class="article-details-author hideAuthor" id="author-{{ add (int $elem_index) 1 }}">

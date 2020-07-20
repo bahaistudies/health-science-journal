@@ -4,6 +4,10 @@
 
 A Hugo theme that mirrors the appearance of an [OJS](https://github.com/pkp/ojs) journal using the [health sciences theme](https://github.com/pkp/healthSciences).
 
+# Demo
+
+A demo instance of the theme is hosted on [Netlify](https://health-sci-j-demo.netlify.app/).
+
 # Features
 
 The theme can replicate the journal front end, including homepage, tables of contents, and journal information pages. 
@@ -12,7 +16,7 @@ Article pages will:
 * Show article details, including authors, abstract, funding, keywords, and references
 * Provide the article's citation in 10 different options for in-browser display or for export in RIS, Endnote, Bib, and CSL-JSON formats.
 * Allow for viewing for PDF and XML galleys using eLife lens
-* Display the Crossmark logo
+* Display the Crossmark logo if crossmark_enabled is set to `true` in config.toml.
 
 A small number of enhancements have also been made including:
 * Lens viewer now includes the journal logo and a back button

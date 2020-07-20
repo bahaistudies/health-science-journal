@@ -7,7 +7,7 @@
 {{ range .Pages }}
 <div class="col-md-3 col-lg-2">
 	<div class="card issue-summary">
-		{{ if .Params.issuecover }}<a href="{{ .Permalink }}"><img class="card-img-top issue-summary-cover" src="{{ .Site.BaseURL}}{{ .Params.issuecover }}"></a>{{ end }}
+		{{ if .Params.issuecover }}<a href="{{ .Permalink }}"><img class="card-img-top issue-summary-cover" src="{{ .Site.BaseURL}}/{{ .Params.issuecover }}"></a>{{ end }}
 		<div class="card-body">
 			<h2 class="card-title issue-summary-series"><a href="{{ .Permalink }}">{{ with .Page.Params.volume }}Vol. {{ . }}{{ end }}{{ with .Page.Params.issue }} No. {{ . }}{{ end }} ({{ dateFormat "2006" .Page.Params.issuedate }})</a></h2>
 			<div class="card-text">
