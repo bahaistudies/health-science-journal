@@ -1,3 +1,5 @@
+![Health Sciences Journal - Hugo Theme](https://raw.githubusercontent.com/epistemehealth/health-sciences-journal/master/images/tn.png)
+
 # Health Sciences Journal Theme
 
 A Hugo theme that mirrors the appearance of an [OJS](https://github.com/pkp/ojs) journal using the [health sciences theme](https://github.com/pkp/healthSciences).
