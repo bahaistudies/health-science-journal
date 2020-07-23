@@ -155,14 +155,10 @@ theme = "health-science-journal"
     isPlainText = true
     mediaType = "application/json"
     path = ""
-   
-    
+
 [outputs]
   home = ["HTML", "customlens", "localfonts", "lensfonts"]
   page = ["html", "galleyPDF", "galleyXML", "exportris", "exportenw", "exportbib", "exportcsljson" ]
-  
-[minify]
-  disableHTML = true
-  
+
 [taxonomies]
   keyword = "keywords"
