@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f581e95-8d2a-4fb8-81fa-d064870ecb1f/deploy-status)](https://app.netlify.com/sites/health-sci-j-demo/deploys)
+
 ![Health Sciences Journal - Hugo Theme](https://raw.githubusercontent.com/epistemehealth/health-science-journal/master/images/tn.png)
 
 # Health Sciences Journal Theme
