@@ -17,6 +17,7 @@ The theme can replicate the journal front end, including homepage, tables of con
 Article pages will:
 * Show article details, including authors, abstract, funding, keywords, and references
 * Provide the article's citation in 10 different options for in-browser display or for export in RIS, Endnote, Bib, and CSL-JSON formats.
+* Embed article citation details in meta tags (Dublin Core and for Google Scholar) and COinS (for Zotero).
 * Allow for viewing for PDF and XML galleys using eLife lens
 * Display the Crossmark logo if crossmark_enabled is set to `true` in config.toml.
 
@@ -69,7 +70,7 @@ PDF and XML galleys can be viewed in browser, with JATS XML galleys rendering us
 
 One of the use cases for this theme is to generate a static mirror of the journal. Pages therefore have params for `canonicalurl` and canonical galleys, so that those pages can be rendered with `rel="canonical"` tags for search engines.
 
-In `config.toml`, the `mirrorfor` param is used to designate the base URL for the journal. If `mirrorfor` is no `rel="canonical"` tags will be used.
+In `config.toml`, the `mirrorfor` param is used to designate the base URL for the journal. If `mirrorfor` is not set then no `rel="canonical"` tags will be used.
 
 # Support and Future Development
 
