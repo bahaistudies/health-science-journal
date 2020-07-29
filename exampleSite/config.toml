@@ -69,15 +69,15 @@ theme = "health-science-journal"
     [[menu.main]]
       weight = 2
       name = "Articles"
-      url = "/current"
+      url = "current"
     [[menu.main]]
       weight = 3
       name = "Archives"
-      url = "/article"
+      url = "article"
     [[menu.main]]
       weight = 4
       name = "Submit"
-      url = "/about/submissions"
+      url = "about/submissions"
     [[menu.main]]
       weight = 5
       name = "About"
@@ -85,17 +85,17 @@ theme = "health-science-journal"
     [[menu.main]]
       parent = "About"
       name = "About the Journal"
-      url = "/about/journal"
+      url = "about/journal"
       weight = 6
     [[menu.main]]
       parent = "About"
       name = "Editorial Team"
-      url = "/about/editorialTeam"
+      url = "about/editorial-team"
       weight = 7
     [[menu.main]]
       parent = "About"
       name = "Contact"
-      url = "/contact"
+      url = "contact"
       weight = 8
 
 # Output formats
