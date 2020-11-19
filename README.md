@@ -8,7 +8,7 @@ A Hugo theme that mirrors the appearance of an [OJS](https://github.com/pkp/ojs)
 
 # Demo
 
-A demo instance of the theme is hosted on [Netlify](https://health-sci-j-demo.netlify.app/).
+A demo instance of the theme is hosted on [Netlify](https://health-sci-j-demo.netlify.app/) and on the [Hugo themes gallery](https://themes.gohugo.io/health-science-journal/).
 
 # Features
 
