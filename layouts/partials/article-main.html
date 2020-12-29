@@ -5,16 +5,16 @@
 {{ if .Params.PDF }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-pdf.html">
 PDF
 </a></div>{{ end }}
-{{ if .Params.HTML }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-html.html">
+{{ if .Params.HTML }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-html.html">
 HTML
 </a></div>{{ end }}
-{{ if .Params.XML }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-lens.html">
+{{ if .Params.XML }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-lens.html">
 XML
 </a></div>{{ end }}
-{{ if .Params.EPUB }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}{{ .Params.EPUB }}">
+{{ if .Params.EPUB }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}{{ .Params.EPUB }}">
 EPUB
 </a></div>{{ end }}
-{{ if .Params.customGalleys }}{{ range .Params.customGalleys }}{{ if .galleyURL }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .galleyURL }}">
+{{ if .Params.customGalleys }}{{ range .Params.customGalleys }}{{ if .galleyURL }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .galleyURL }}">
 {{ .galleyname }}
 </a></div>&nbsp;{{ end }}{{ end }}{{ end }}
 </div>
@@ -54,16 +54,16 @@ Keywords
 {{ if .Params.PDF }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-pdf.html">
 PDF
 </a></div>{{ end }}
-{{ if .Params.HTML }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-html.html">
+{{ if .Params.HTML }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-html.html">
 HTML
 </a></div>{{ end }}
-{{ if .Params.XML }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-lens.html">
+{{ if .Params.XML }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}view-lens.html">
 XML
 </a></div>{{ end }}
-{{ if .Params.EPUB }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}{{ .Params.EPUB }}">
+{{ if .Params.EPUB }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .Page.Permalink }}{{ .Params.EPUB }}">
 EPUB
 </a></div>{{ end }}
-{{ if .Params.customGalleys }}{{ range .Params.customGalleys }}{{ if .galleyURL }}<div class="article-details-galley"><a class="btn btn-primary" href="{{ .galleyURL }}">
+{{ if .Params.customGalleys }}{{ range .Params.customGalleys }}{{ if .galleyURL }}&nbsp;<div class="article-details-galley"><a class="btn btn-primary" href="{{ .galleyURL }}">
 {{ .galleyname }}
 </a></div>{{ end }}{{ end }}{{ end }}
 </div>
