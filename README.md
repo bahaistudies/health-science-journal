@@ -37,7 +37,7 @@ To view a demo in a local installation:
 $ git clone https://github.com/epistemehealth/health-science-journal.git
 $ cd health-science-journal
 $ cd exampleSite
-$ hugo server --themesDir ../..
+$ hugo server --minify --themesDir ../..
 ```
 
 # Configuration
