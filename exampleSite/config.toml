@@ -120,6 +120,11 @@ theme = "health-science-journal"
     isPlainText = true
     mediaType = "text/html"
     path = ""
+  [outputFormats.galleyHTML]
+    baseName = "view-html"
+    isPlainText = true
+    mediaType = "text/html"
+    path = ""
   [outputFormats.customlens]
     baseName = "js/customlens"
     isPlainText = true
@@ -158,7 +163,7 @@ theme = "health-science-journal"
 
 [outputs]
   home = ["HTML", "customlens", "localfonts", "lensfonts"]
-  page = ["html", "galleyPDF", "galleyXML", "exportris", "exportenw", "exportbib", "exportcsljson" ]
+  page = ["html", "galleyPDF", "galleyXML", "galleyHTML", "exportris", "exportenw", "exportbib", "exportcsljson" ]
 
 [taxonomies]
   keyword = "keywords"
