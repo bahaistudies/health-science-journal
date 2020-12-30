@@ -140,6 +140,11 @@ theme = "health-science-journal"
     isPlainText = true
     mediaType = "text/css"
     path = ""
+  [outputFormats.htmlgalleyfonts]
+    baseName = "css/htmlgalleyfonts"
+    isPlainText = true
+    mediaType = "text/css"
+    path = ""
   [outputFormats.exportris]
     baseName = "export-citation"
     isPlainText = true
@@ -162,7 +167,7 @@ theme = "health-science-journal"
     path = ""
 
 [outputs]
-  home = ["HTML", "customlens", "localfonts", "lensfonts"]
+  home = ["HTML", "customlens", "localfonts", "lensfonts", "htmlgalleyfonts"]
   page = ["html", "galleyPDF", "galleyXML", "galleyHTML", "exportris", "exportenw", "exportbib", "exportcsljson" ]
 
 [taxonomies]
